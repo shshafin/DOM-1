@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM=Document object model</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<style>
+    #fruit-name{
+        color: rgb(123, 123, 123);
+    }
+    .fruit-container li{
+        color: rgb(0, 218, 225);
+    }
+    #lang{
+        color: aquamarine;
+    }
+    .Language-name{
+        color: rgb(24, 21, 17);
+    }
+    
+</style>
+<body>
+    <header>
+        <h1>DOM = Document Object Model</h1>
+    </header>
+    <main id="main">
+
+
+        <section id="place">
+        <h2 id="lang">languages</h2>
+        <ul>
+            <li  class="Language-name">  html</li>
+            <li  class="Language-name">  css</li>
+            <li  class="Language-name">    javascript</li>
+        </ul>
+        </section>
+
+
+        <section class="fruit-container" id="name">
+            <h1 id="fruit-name" class="suah sabh fdi">Fruits I like</h1>
+            <ul>
+                <li>apple</li>
+                <li>banana</li>
+                <li>mango</li>
+                <li>orange</li>
+            </ul>
+        </section>
+
+        <section id="family-section">
+            <h1 id="family-heading">My family</h1>
+            <ul id="color">
+                <li>ammu</li>
+                <li>abbu</li>
+                <li>jakia</li>
+                <li>afia</li>
+                <li>nanu</li>
+                <li>swarna</li>
+            </ul>
+        </section>
+
+        
+
+    </main>
+    <script src="js/dom.js"></script>
+    <script src="js/append.js"></script>
+    <script>
+        const info={
+            name:'shafin',
+            id:"cse2302029165",
+            hello:  function (time){
+                // console.log(time, 'study kortese');
+            }
+        }
+        const liCollection= document.getElementsByTagName('li');
+        // console.log(liCollection);
+        for(let li of liCollection){
+            // console.log(li.innerText);
+            
+        }
+        const h1Collection=document.getElementsByTagName('h1');
+        for(let h1 of h1Collection){
+            // console.log(h1.innerText);
+        }
+        const h2Collection=document.getElementsByTagName('h2');
+        for(let h2 of h2Collection){
+            // console.log(h2.innerText);
+        }
+        const ulCollection=document.getElementsByTagName('ul');
+        for(let ul of ulCollection){
+            // console.log(ul.innerText);
+        }
+        
+        const vashas=document.getElementsByClassName('Language-name');
+        for(let vasha  of vashas){
+            // console.log(vasha.innerText);
+        }
+        const change=document.getElementById('lang');
+        change.innerText='minee'
+        // console.log(change);
+        const l=document.querySelectorAll('.fruit-container li');
+        // console.log(l);
+        for(let li of l){
+            // console.log(li.innerText);
+        }
+    </script>
+</body>
+</html>
+
+<!-- getElementByTagName == any tag you can see -->
+
+<!-- getElementById == specific id  you can see -->
+
+<!-- getElementsByClassName == specific class you can see -->
+
+<!-- querySelectorAll == class/id sign to get all element -->
+
+<!-- querySelector == class/id sign to get first element-->
+
+<!-- classList == shown all the class -->
+
+<!-- classList.add == add a class --> 
+
+<!-- classList.remove == remove a class --> 
+
+<!-- childNodes == get the child of section --> 
+
+<!-- childNodes[x] == get any child of  section -->
+
+<!-- childNodes[x].nextSibling == next element of childNodes[x] -->
+
+<!-- createElement == create new element -->
+
+<!-- appendChild == add a child\element -->
+
+<!-- parentNode == parent of the element -->
+
+<!-- > = inside tag -->
+
+<!-- {} = means add text inside -->
